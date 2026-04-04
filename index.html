@@ -1,27 +1,404 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ysn Servvvv</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Transit, Import Export, Logistique et Transport au Maroc | Comored Devel</title>
+    <meta name="description" content="Comored Devel est une société spécialisée en logistique, transport, transit et import export au Maroc. Nous offrons des solutions fiables et rapides pour les entreprises et les opérations internationales.">
+    <link rel="icon" href="Copy of COMORED DEVEL LOGOS.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="canonical" href="https://comoredevel.com/"/>
 </head>
 <body>
-    <div class="header">
-        <div class="header-scrolled">
-        <div class="logo">
-            <img width="160" src="Design.png" alt="">
+    <!-- Top bar (contact strip) -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-contact">
+                <a href="tel:+212661062551" class="topbar-link">
+                    <span class="topbar-icon" aria-hidden="true">📞</span> +212 661 062 551
+                </a>
+                <a href="mailto:comoredevel@gmail.com" class="topbar-link">
+                    <span class="topbar-icon" aria-hidden="true">✉</span> comoredevel@gmail.com
+                </a>
+            </div>
         </div>
-        <div class="features">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a> 
-            <a href="">Contact</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="Copy of COMORED DEVEL LOGOS.png" alt="COMORED DEVEL SERVICE - Transport Logistique Import Export Transit">
+            </a>
+            <nav class="nav" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item-dropdown">
+                        <button type="button" class="nav-link nav-link-dropdown" aria-expanded="false" aria-controls="menu-services" id="btn-services">Services <span class="dropdown-arrow"></span></button>
+                        <ul class="nav-dropdown" id="menu-services" aria-hidden="true">
+                            <li><a href="Services.html#transit">Transit</a></li>
+                            <li><a href="Services.html#import">Import</a></li>
+                            <li><a href="Services.html#export">Export</a></li>
+                            <li><a href="Services.html#logistique">Logistique</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="propos.html" class="nav-link">À propos</a></li>
+                    <li><a href="Solution.html" class="nav-link">Solutions</a></li>
+                    <li><a href="FAQ.html" class="nav-link">FAQ</a></li>
+                    <li><a href="Contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="Contact.html" class="btn btn-cta">Demander un devis</a>
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        </div> 
-    </div>hellooo world
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    </header>
 
+    <main>
+        <!-- Hero Slider -->
+        <section id="accueil" class="hero">
+            <div class="hero-slider">
+                <div class="hero-slide hero-slide-1 hero-slide-active">
+                    <div class="hero-slide-overlay" aria-hidden="true"></div>
+                    <div class="container hero-content">
+                        <h1 class="hero-title">Expert en Transit & Dédouanement  <span>au Maroc</span></h1>
+                        <p class="hero-subtitle">Votre partenaire de confiance pour l'import, l'export sur le territoire du Maroc.</p>
+                        <div class="hero-buttons">
+                            <a href="Services.html" class="btn btn-primary">Nos services</a>
+                            <a href="Contact.html" class="btn btn-secondary">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="hero-slide hero-slide-3">
+                    <div class="hero-slide-overlay" aria-hidden="true"></div>
+                    <div class="container hero-content">
+                        <h1 class="hero-title">Import & Export</h1>
+                        <p class="hero-subtitle">Solutions sur mesure pour vos échanges commerciaux dans le monde entier.</p>
+                        <div class="hero-buttons">
+                            <a href="Contact.html" class="btn btn-primary">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slider-dots" id="heroDots" aria-label="Slides"></div>
+            <div class="hero-slider-arrows">
+                <button type="button" class="hero-arrow hero-prev" id="heroPrev" aria-label="Slide précédent">‹</button>
+                <button type="button" class="hero-arrow hero-next" id="heroNext" aria-label="Slide suivant">›</button>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
 
+        <!-- Nos domaines d'intervention -->
+        <section class="applications" aria-labelledby="applications-title">
+            <div class="container">
+                <h2 id="applications-title" class="section-title">Nos domaines d'intervention</h2>
+                <p class="section-subtitle">Avec plus de 25 ans d’expérience, Comored Devel vous propose des services de dédouanement et de logistique haut de gamme, sur mesure et adaptés à vos besoins.</p>
+                <div class="applications-grid">
+                    <a href="Services.html#transit" class="application-card application-card-image">
+                        <div class="application-card-image-wrap">
+                            <img src="https://afagegroup.com/wp-content/uploads/2022/05/Navire-porte-conteneur-900x600.jpg" alt="Transit maritime - cargo et fret par mer" loading="lazy">
+                        </div>
+                        <div class="application-card-body">
+                            <h3>Transit maritime</h3>
+                            <p>Fret maritime international, coordination portuaire et suivi de vos conteneurs du port d'origine jusqu'à la destination finale.</p>
+                            <span class="application-link">Voir plus →</span>
+                        </div>
+                    </a>
+                    <a href="Services.html#logistique" class="application-card application-card-image">
+                        <div class="application-card-image-wrap">
+                            <img src="https://www.alsacemotopieces.com/images/quest-ce-que-le-transport-terrestre-de-marchandises.jpg" alt="Transport terrestre - camions et logistique routière" loading="lazy">
+                        </div>
+                        <div class="application-card-body">
+                            <h3>Transport terrestre</h3>
+                            <p>Réseau de transport routier pour vos livraisons nationales et internationales, avec suivi et délais maîtrisés.</p>
+                            <span class="application-link">Voir plus →</span>
+                        </div>
+                    </a>
+                    <a href="Services.html#export" class="application-card application-card-image">
+                        <div class="application-card-image-wrap">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.zF7rpi0ZpjCDxfbVo-JkoQHaFB?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fret aérien - avion cargo pour transport express" loading="lazy">
+                        </div>
+                        <div class="application-card-body">
+                            <h3>Fret aérien</h3>
+                            <p>Solutions de fret aérien pour vos opérations Import & Export, avec un temps de transit réduit et une sécurité maximale.</p>
+                            <span class="application-link">Voir plus →</span>
+                        </div>
+                    </a>
+                    <a href="Services.html#transit" class="application-card application-card-image">
+                        <div class="application-card-image-wrap">
+                            <img src="https://ifcgmsconsultinggroup.com/wp-content/uploads/2022/11/logistique-transport-conteneurs-cargo-avion-cargo-pont-roulant-etat-marche_512343-260.webp" alt="Douane & Transit - formalités et dédouanement" loading="lazy">
+                        </div>
+                        <div class="application-card-body">
+                            <h3>Dédouanement</h3>
+                            <p>Prise en charge de toutes les formalités légales, avec notre engagement sur l’honneur de vos opérations.</p>
+                            <span class="application-link">Voir plus →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valeur / précision -->
+        <section class="value-section" aria-labelledby="value-title">
+            <div class="container">
+                <div class="value-content">
+                    <h2 id="value-title" class="section-title">Précision. Performance. Fiabilité.</h2>
+                    <p class="value-lead">Votre partenaire pour le commerce international</p>
+                    <p class="value-text">
+                        COMORED DEVEL offre des solutions adaptées à vos besoins en matières de: transport, logistique, import, export et transit.
+                        Nous accompagnons les entreprises dans leurs échanges internationaux avec un réseau de partenaires
+                        et une expertise reconnue. De la documentation à la livraison finale, nous assurons une chaîne
+                        logistique fluide et sécurisée.
+                    </p>
+                    <a href="Contact.html" class="btn btn-primary">Demander un devis</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services détaillés -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Nos services</h2>
+                <p class="section-subtitle">Des solutions sur mesure pour vos besoins en commerce international</p>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h3>Transit</h3>
+                        <p>Gestion complète du transit de vos marchandises avec suivi en temps réel et coordination logistique optimale.</p>
+                        <a href="Contact.html" class="service-more">En savoir plus →</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline></svg>
+                        </div>
+                        <h3>Import & Export</h3>
+                        <p>Nous offrons un service rapide, compétitif et complet, avec un accompagnement personnalisé de DUM et de PORTNET</p>
+                        <a href="Contact.html" class="service-more">En savoir plus →</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                        </div>
+                        <h3>Gestion Administrative & Logistique</h3>
+                        <p>Gestion des comptes pour tous les régimes : MAC, RED, EPP, COC, et conformité des produits à l’import</p>
+                        <a href="Contact.html" class="service-more">En savoir plus →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- À propos -->
+        <section id="apropos" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">À propos de COMORED DEVEL</h2>
+                        <p class="about-lead">Votre partenaire en transit, en logistique de confiance</p>
+                        <p class="about-description">
+                            COMORED DEVEL SARL est un expert incontournable de 25 ans d’expérience, offre la meilleure
+                            gestion d’exploitation, de l’import export, du transit avec
+                            le dédouanement rapide, à Casablanca Maroc, offre des
+                            solutions Administratives compétitives.
+                        </p>
+                        <p class="about-description">
+                            Avec notre expertise et notre réseau de partenaires (mer, terre, air), nous garantissons une gestion efficace
+                            de vos opérations, de la documentation à la livraison finale.
+                        </p>
+                        <ul class="about-features">
+                            <li><span class="feature-icon">✓</span> Expertise reconnue</li>
+                            <li><span class="feature-icon">✓</span> Réseau international</li>
+                            <li><span class="feature-icon">✓</span> Service personnalisé</li>
+                            <li><span class="feature-icon">✓</span> Suivi en temps réel</li>
+                        </ul>
+                        <a href="Contact.html" class="btn btn-primary">Nous contacter</a>
+                    </div>
+                    <div class="about-visual">
+                        <div class="about-visual-box">
+                            <div class="about-stats">
+                                <div class="stat"><span class="stat-number" data-count="25">25</span><span class="stat-suffix">+</span><br><span class="stat-label">Années d'expérience</span></div>
+                                <div class="stat"><span class="stat-number" data-count="53">53</span><span class="stat-suffix">+</span><br><span class="stat-label">Clients très satisfaits</span></div>
+                                <div class="stat"><span class="stat-number" data-count="50">50</span><span class="stat-suffix">+</span><br><span class="stat-label">Pays desservis</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- Solutions -->
+        <section id="solutions" class="solutions">
+            <div class="container">
+                <h2 class="section-title">Pourquoi nous choisir</h2>
+                <p class="section-subtitle">Des avantages concrets pour votre activité</p>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <h3>Douane & conformité</h3>
+                        <p>Gestion des formalités et conformité réglementaire pour éviter les obstacles.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Traçabilité</h3>
+                        <p>Suivi de vos opérations en temps réel.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Couverture nationale</h3>
+                        <p>Réseau de partenaires pour les opérations Import Export partout au Maroc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">Questions fréquentes</h2>
+                <p class="section-subtitle">Retrouvez les réponses aux questions les plus posées</p>
+                <div class="faq-list">
+                    <div class="faq-item" aria-expanded="false">
+                        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+                            Quels types de marchandises prenez-vous en charge ?
+                        </button>
+                        <div class="faq-answer" id="faq-a1" aria-labelledby="faq-q1" hidden>
+                            <p>Nous gérons une large gamme de marchandises industrielles : général cargo, conteneurisé (FCL/LCL), groupage, fret aérien et terrestre. Selon la nature de vos produits, nous vous proposons le mode de transport et les incoterms adaptés.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" aria-expanded="false">
+                        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+                            Comment obtenir un devis ?
+                        </button>
+                        <div class="faq-answer" id="faq-a2" aria-labelledby="faq-q2" hidden>
+                            <p>Remplissez le formulaire de contact en indiquant la provenance, l’origine, la destination, le type de marchandise et le volume. Notre équipe vous répond sous 24 à 48 heures avec des propositions tarifaires personnalisées.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" aria-expanded="false">
+                        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+                            Assurez-vous le suivi des envois ?
+                        </button>
+                        <div class="faq-answer" id="faq-a3" aria-labelledby="faq-q3" hidden>
+                            <p>Oui. Nous fournissons un suivi en temps réel de vos expéditions et une mise à jour régulière jusqu'à livraison. Vous pouvez également nous contacter pour un point de situation à tout moment.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" aria-expanded="false">
+                        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+                            Travaillez-vous avec des particuliers ou uniquement des professionnels ?
+                        </button>
+                        <div class="faq-answer" id="faq-a4" aria-labelledby="faq-q4" hidden>
+                            <p>Nous travaillons principalement avec des entreprises (PME, grands comptes, importateurs/exportateurs). Nous pouvons étudier certains projets avec des particuliers selon la nature de la marchandise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contactez-nous</h2>
+                <p class="section-subtitle">Une question ou un projet ? Nous vous répondons rapidement.</p>
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">📍</div>
+                            <h3>Adresse</h3>
+                            <p>Résidence Bel Air, GH-4D, App 4, Aïn Harrouda, Grand Casablanca, Maroc</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">📞</div>
+                            <h3>Téléphone</h3>
+                            <a href="tel:+212661062551" class="contact-link">+212 661 062 551</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">✉</div>
+                            <h3>Email</h3>
+                            <a href="mailto:comoredevel@gmail.com" class="contact-link">comoredevel@gmail.com</a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <img width="120" src="cmrd.png" alt="COMORED DEVEL SERVICE" class="footer-logo-img">
+                    <p>COMORED DEVEL est votre partenaire en Transit, Logistique, Import & Export.</p>
+                    <a href="Contact.html" class="footer-cta">Demander un devis</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:comoredevel@gmail.com">comoredevel@gmail.com</a></li>
+                        <li><a href="tel:+212661062551">+212 661 062 551</a></li>
+                        <li>Maroc</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="Services.html">Transit</a></li>
+                        <li><a href="Services.html">Import</a></li>
+                        <li><a href="Services.html">Export</a></li>
+                        <li><a href="Services.html">Logistique</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens utiles</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="propos.html">À propos</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> COMORED DEVEL SERVICE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.AI_CHAT_ENDPOINT='api/chat.php';</script>
+    <script src="script.js"></script>
+    <script>
+        // Mettre l'année automatiquement
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

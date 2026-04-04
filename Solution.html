@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Solutions | COMORED DEVEL</title>
+    <meta name="description" content="Pourquoi choisir COMORED DEVEL : Douane, conformité, traçabilité et réseau national.">
+    <link rel="icon" href="Copy of COMORED DEVEL LOGOS.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-contact">
+                <a href="tel:+212661062551" class="topbar-link">
+                    <span class="topbar-icon" aria-hidden="true">📞</span> +212 661 062 551
+                </a>
+                <a href="mailto:comoredevel@gmail.com" class="topbar-link">
+                    <span class="topbar-icon" aria-hidden="true">✉</span> comoredevel@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="Copy of COMORED DEVEL LOGOS.png" alt="COMORED DEVEL SERVICE - Transport Logistique Import Export Transit">
+            </a>
+            <nav class="nav" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item-dropdown">
+                        <button type="button" class="nav-link nav-link-dropdown" aria-expanded="false" aria-controls="menu-services" id="btn-services">Services <span class="dropdown-arrow"></span></button>
+                        <ul class="nav-dropdown" id="menu-services" aria-hidden="true">
+                            <li><a href="Services.html#transit">Transit</a></li>
+                            <li><a href="Services.html#import">Import</a></li>
+                            <li><a href="Services.html#export">Export</a></li>
+                            <li><a href="Services.html#logistique">Logistique</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="propos.html" class="nav-link">À propos</a></li>
+                    <li><a href="Solution.html" class="nav-link">Solutions</a></li>
+                    <li><a href="FAQ.html" class="nav-link">FAQ</a></li>
+                    <li><a href="Contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="Contact.html" class="btn btn-cta">Demander un devis</a>
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    </header>
+
+    <main>
+        <section id="solutions" class="solutions">
+            <div class="container">
+                <h2 class="section-title">Pourquoi nous choisir</h2>
+                <p class="section-subtitle">Des avantages concrets pour votre activité</p>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <h3>Douane & conformité</h3>
+                        <p>Gestion des formalités et conformité réglementaire pour éviter les obstacles.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Traçabilité</h3>
+                        <p>Suivi de vos opérations en temps réel.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Couverture nationale</h3>
+                        <p>Réseau de partenaires pour les opérations Import Export partout au Maroc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <img src="Copy of COMORED DEVEL LOGOS.png" alt="COMORED DEVEL SERVICE" class="footer-logo-img">
+                    <p>COMORED DEVEL est votre partenaire en Transit, Logistique, Import & Export.</p>
+                    <a href="Contact.html" class="footer-cta">Demander un devis</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:comoredevel@gmail.com">comoredevel@gmail.com</a></li>
+                        <li><a href="tel:+212661062551">+212 661 062 551</a></li>
+                        <li>Maroc</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="Services.html#transit">Transit</a></li>
+                        <li><a href="Services.html#import">Import</a></li>
+                        <li><a href="Services.html#export">Export</a></li>
+                        <li><a href="Services.html#logistique">Logistique</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens utiles</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="propos.html">À propos</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> COMORED DEVEL SERVICE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.AI_CHAT_ENDPOINT='api/chat.php';</script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
