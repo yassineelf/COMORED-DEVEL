@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var dropdownItems = document.querySelectorAll('.nav-item-dropdown');
   function closeMobile() {
     if (navList) navList.classList.remove('open');
-    if (navToggle) navToggle.classList.remove('active');
+    if (navToggle) {
+      navToggle.classList.remove('active');
+      navToggle.setAttribute('aria-label', 'Ouvrir le menu');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
     if (navOverlay) {
       navOverlay.classList.remove('open');
       navOverlay.setAttribute('aria-hidden', 'true');
@@ -18,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!navList || !navToggle) return;
     var isOpen = navList.classList.toggle('open');
     navToggle.classList.toggle('active', isOpen);
+    navToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     if (navOverlay) {
       navOverlay.classList.toggle('open', isOpen);
       navOverlay.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
@@ -30,8 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
   if (navOverlay) {
     navOverlay.addEventListener('click', closeMobile);
   }
-      navToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
-    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   var navLinks = document.querySelectorAll('.nav-list a');
   if (navLinks.length) {
     navLinks.forEach(function (a) {
@@ -69,10 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-    document.addEventListener('click', function (e) {
-    if (e.target.closest('.nav-list')) return;
-    dropdownItems.forEach(function (item) { setDropdown(item, false); });
-  });
   function setDropdown(item, expanded) {
     if (!item) return;
     item.setAttribute('aria-expanded', expanded ? 'true' : 'false');
@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   document.addEventListener('click', function (e) {
+    if (e.target.closest('.nav-list')) return;
     dropdownItems.forEach(function (item) { setDropdown(item, false); });
   });
   document.addEventListener('keydown', function (e) {
@@ -247,6 +248,25 @@ document.addEventListener('DOMContentLoaded', function () {
             field.placeholder = 'Envoyé';
           }
         });
-       
+        setTimeout(function () {
+          if (submitBtn) {
+            submitBtn.classList.remove('btn-sent');
+            submitBtn.textContent = 'Envoyer le message';
+            submitBtn.disabled = false;
+          }
+          ['name', 'email', 'phone', 'subject', 'message'].forEach(function (id) {
+            var field = form.querySelector('#' + id);
+            if (field && 'placeholder' in field) {
+              field.placeholder = '';
+            }
+          });
+        }, 6000);
+      });
+    });
+  }
 
-
+  if (header) {
+    applyHeaderTransparency();
+    window.addEventListener('scroll', applyHeaderTransparency, { passive: true });
+  }
+});
