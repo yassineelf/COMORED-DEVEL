@@ -67,6 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+    document.addEventListener('click', function (e) {
+    if (e.target.closest('.nav-list')) return;
+    dropdownItems.forEach(function (item) { setDropdown(item, false); });
+  });
   function setDropdown(item, expanded) {
     if (!item) return;
     item.setAttribute('aria-expanded', expanded ? 'true' : 'false');
