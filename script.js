@@ -241,19 +241,6 @@ document.addEventListener('DOMContentLoaded', function () {
             field.placeholder = 'Envoyé';
           }
         });
-        setTimeout(function () {
-          if (submitBtn) {
-            submitBtn.classList.remove('btn-sent');
-            submitBtn.textContent = 'Envoyer le message';
-            submitBtn.disabled = false;
-          }
-          ['name', 'email', 'phone', 'subject', 'message'].forEach(function (id) {
-            var field = form.querySelector('#' + id);
-            if (field && 'placeholder' in field) {
-              field.placeholder = '';
-            }
-        
-   });
-  
-  
- 
+       
+
+
