@@ -252,11 +252,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (field && 'placeholder' in field) {
               field.placeholder = '';
             }
-          });
-        }, 6000);
-      });
-    });
-  
+        
+   });
   
   
  
