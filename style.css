@@ -185,6 +185,22 @@ body.menu-open {
 .nav-link-dropdown {
     padding-right: 28px;
 }
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(320px, 88vw);
+        height: 100dvh;
+        flex-direction: column;
+        background: var(--logo-dark);
+        padding: 100px 24px 32px;
+        z-index: 1001;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .nav-list.open { right: 0; }
+    .nav-toggle { position: relative; z-index: 1002; }
 
 .dropdown-arrow {
     position: absolute;
