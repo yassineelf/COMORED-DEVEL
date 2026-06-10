@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
   if (navOverlay) {
     navOverlay.addEventListener('click', closeMobile);
   }
+      navToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   var navLinks = document.querySelectorAll('.nav-list a');
   if (navLinks.length) {
     navLinks.forEach(function (a) {
