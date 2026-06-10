@@ -259,14 +259,7 @@ body.menu-open {
     justify-content: space-between;
     align-items: center;
 }
-.btn-devis {
-    background-color: #3b82f6;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-}
+
 
 .btn-cta {
     background: var(--logo-blue);
