@@ -1,4 +1,4 @@
-/* ============================================
+/* /* ============================================
    COMORED DEVEL SERVICE
    Couleurs logo : #6a7ae8 (bleu mauve), #333333 (gris foncé), #FFFFFF (blanc)
    Header = fond blanc comme le logo
@@ -183,24 +183,8 @@ body.menu-open {
 }
 
 .nav-link-dropdown {
-    padding-right: 28px;
+  padding-right: 28px;
 }
-    .nav-list {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: min(320px, 88vw);
-        height: 100dvh;
-        flex-direction: column;
-        background: var(--logo-dark);
-        padding: 100px 24px 32px;
-        z-index: 1001;
-        transition: right 0.3s ease;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    .nav-list.open { right: 0; }
-    .nav-toggle { position: relative; z-index: 1002; }
 
 .dropdown-arrow {
     position: absolute;
@@ -215,9 +199,7 @@ body.menu-open {
     transition: transform var(--transition);
 }
 
-.nav-item-dropdown[aria-expanded="true"] .dropdown-arrow {
-    transform: translateY(-50%) rotate(180deg);
-}
+
 
 .nav-dropdown {
     position: absolute;
@@ -271,6 +253,19 @@ body.menu-open {
     border: 2px solid transparent;
     cursor: pointer;
     font-family: inherit;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-devis {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .btn-cta {
@@ -973,15 +968,28 @@ section {
 
 .contact-layout {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     gap: clamp(32px, 5vw, 56px);
-    align-items: start;
+    align-items: center;
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: clamp(16px, 2.5vw, 24px);
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background: var(--bg-light);
+    padding: clamp(28px, 4vw, 40px);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
 }
 
 .contact-card {
@@ -1451,4 +1459,10 @@ section {
 .header.transparent {
     background: rgba(255,255,255,0.85);
     backdrop-filter: saturate(140%) blur(8px);
+}
+
+.nav-item-dropdown:hover .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
