@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>FAQ Import Export Maroc | Questions Fréquentes et Réponses</title>
+    <link rel="canonical" href="https://www.comoredevel.com/FAQ.html">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Questions fréquentes sur nos services de transit, import, export et logistique.">
-    <link rel="icon" href="comored-devel-logos.png" type="image/x-icon">
-    <link rel="canonical" href="https://www.comoredevel.com/FAQ.html" />
+    <link rel="icon" href="comored-devel-logos.png" type="image/png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Comored Devel">
+    <meta property="og:locale" content="fr_MA">
+    <meta property="og:title" content="FAQ Import Export Maroc | Questions Fréquentes et Réponses">
+    <meta property="og:description" content="Questions fréquentes sur nos services de transit, import, export et logistique.">
+    <meta property="og:url" content="https://www.comoredevel.com/FAQ.html">
+    <meta property="og:image" content="https://www.comoredevel.com/pic3.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAQ | COMORED DEVEL">
+    <meta name="twitter:description" content="Les réponses aux questions les plus posées sur nos services.">
+    <meta name="twitter:image" content="https://www.comoredevel.com/pic3.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,14 +41,12 @@
     <header class="header" id="header">
         <div class="container header-inner">
             <a href="index.html" class="logo">
-                <img src="comored-devel-logos.png" alt="COMORED DEVEL SERVICE - Transport Logistique Import Export Transit">
+                <img src="comored-devel-logos.png" alt="COMORED DEVEL SERVICE - Transport Logistique Import Export Transit" width="180" height="60">
             </a>
             <nav class="nav" aria-label="Navigation principale">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li class="nav-item-dropdown">
-                        <li><a href="Service.html" class="nav-link">Services</a></li>
-            
+                    <li class="nav-item-dropdown"><a href="Service.html" class="nav-link">Services</a></li>
                     <li><a href="propos.html" class="nav-link">À propos</a></li>
                     <li><a href="Solution.html" class="nav-link">Solutions</a></li>
                     <li><a href="FAQ.html" class="nav-link">FAQ</a></li>
@@ -48,6 +61,14 @@
         <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
     </header>
     <main>
+        <section class="hero-page hero-faq">
+            <div class="container">
+                <p class="hero-page-eyebrow"><a href="index.html">Accueil</a> / FAQ</p>
+                <h1 class="section-title">Questions fréquentes</h1>
+                <p class="section-subtitle">Les réponses aux questions les plus posées sur nos services</p>
+            </div>
+        </section>
+
         <section id="faq" class="faq">
             <div class="container">
                 <h2 class="section-title">Questions fréquentes</h2>
@@ -94,7 +115,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-about">
-                    <img src="cmrd.png" alt="COMORED DEVEL SERVICE" class="footer-logo-img">
+                    <img src="cmrd.png" alt="COMORED DEVEL SERVICE" class="footer-logo-img" width="130" height="130">
                     <p>COMORED DEVEL est votre partenaire en Transit, Logistique, Import & Export.</p>
                     <a href="Contact.html" class="footer-cta">Demander un devis</a>
                 </div>
@@ -129,6 +150,47 @@
     <script src="script.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quels types de marchandises prenez-vous en charge ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous gérons une large gamme de marchandises industrielles : général cargo, conteneurisé (FCL/LCL), groupage, fret aérien et terrestre. Selon la nature de vos produits, nous vous proposons le mode de transport et les incoterms adaptés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment obtenir un devis ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Remplissez le formulaire de contact en indiquant la provenance, l'origine, la destination, le type de marchandise et le volume. Notre équipe vous répond sous 24 à 48 heures avec des propositions tarifaires personnalisées."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Assurez-vous le suivi des envois ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Nous fournissons un suivi en temps réel de vos expéditions et une mise à jour régulière jusqu'à livraison. Vous pouvez également nous contacter pour un point de situation à tout moment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Travaillez-vous avec des particuliers ou uniquement des professionnels ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous travaillons principalement avec des entreprises (PME, grands comptes, importateurs/exportateurs). Nous pouvons étudier certains projets avec des particuliers selon la nature de la marchandise."
+          }
+        }
+      ]
+    }
     </script>
     </body>
     </html>
